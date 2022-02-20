@@ -74,11 +74,34 @@ __________________________________________________________
 
 ### BLOCK DIAGRAM
 ![enter image description here](https://www.linkpicture.com/q/USE-CASE-4.png)
-_____________________________________________
-### WORKING OF BLOCKS
-## RAIN SENSOR 
-- A sensor that is used to sence the water drops . This sensor works like a switch.The rain sensor module includes a sensing pad which includes two series copper tracks coated with nickel. This pad includes two header pins which are connected internally to the copper tracks of the pad. The main function of these two header pins is for connecting the Sensing Pad with the rain sensor module with the help of two jumper wires. the rain sensor module’s one pin provides a +5v power supply toward the one path of the sensing pad, whereas the other pin gets the r
-## CONPONENT SPECS
-- Operating voltage ranges from 3.3 to 5V
-- The operating current is 15 mA
-- The sensing pad size is 5cm x 4 cm with a nickel plate on one face.
+
+## WORKING OF BLOCKS
+_______________________________________
+### RAIN SENSOR 
+- A sensor that is used to sence the water drops and transmits the signal to the controller. 
+- This sensor works like a switch.The rain sensor module includes a sensing pad which includes two series copper tracks coated with nickel. 
+- This pad includes two header pins which are connected internally to the copper tracks of the pad.
+
+### ULTRASONIC SENSOR
+- This sensor sence the level of the bin is filled and sends the data to the arduino.
+- An ultrasonic sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound wave. 
+- It converts the reflected sound into an electrical signal.
+
+### IR SENSOR
+- Proximity Sensor are used to detect objects and obstacles in front of sensor and gives the signal to the arduino.
+- Sensor keeps transmitting infrared light and when any object comes near. 
+- it is detected by the sensor by monitoring the reflected light from the object.
+
+### ATMEGA 328
+- This board is used as centerallized contol unit. thus it receives the data from the sensor and transmits the processsed signals to the actuators and display
+- Arduino UNO is a microcontroller board based on the ATmega328P.
+- It has 14 digital input/output pins (of which 6 can be used as PWM outputs).
+- 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button.
+- It contains everything needed to support the microcontroller.
+
+### BLUETOOTH HC-05 MODULE
+- This uses serial communication protocol to receive the data from board and uses wireless communication protocol to transmitt the data to the another wirelesss device.
+- HC-05 4 Pin Wireless Serial Bluetooth Module is a Bluetooth module for use with any microcontroller.
+- It uses the UART protocol to make it easy to send and receive data wirelessly.
+- The HC-04 module can be used as a Master as well as a slave device for transmitter and receiver.  
+_______________________________________________________________
