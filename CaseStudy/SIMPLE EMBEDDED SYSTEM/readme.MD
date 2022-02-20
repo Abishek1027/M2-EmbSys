@@ -3,18 +3,14 @@
 # BASIC AGRI ROBOT
 
 ### CONTENTS:
-____________
-## I. BASIC EMBEDDED SYSTEM
+_________
 
-##  1. AGRICULTURE ROBOT
+1.1 INTODUCTION
 
-> 1.1 INTODUCTION
+1.2 APPLICATION
 
-> 1.2 APPLICATION
-
-> 1.3 BLOCK DIAGRAM
-
-## 1.AGRICULTURE ROBOT
+1.3 BLOCK DIAGRAM
+________________________________
 
 ### 1.1 INTRODUCTION
 
@@ -25,6 +21,7 @@ ____________
 - Agriculture robots automate the works of farmers.
 
 - Boosting the efficiency of production and reducing the dependency of labors.
+___________________________
 
 ### 1.2  APPLICATIONS OF AGRI ROBOT
 
@@ -37,9 +34,12 @@ ____________
 - Spraying water.
 
 - Sensing humidity.
+_______________________
 
 ### 1.3 BLOCK DIAGRAM
-___
+
 ![enter image description here](https://www.linkpicture.com/q/Untitled-Workspace_2.png)
 
-## COMPONENT EXPLAINATION
+____________________________________________
+
+## 1.4 COMPONENT EXPLAINATION
