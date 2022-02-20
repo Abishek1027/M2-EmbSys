@@ -43,6 +43,33 @@ ______________________________________
 
 - Environment hygiene is improved
 ______________________
+## V MODEL APPROACH
+![enter image description here](https://www.linkpicture.com/q/USE-CASE.png)
+______________________
+## REQUIREMENTS
+#### High level requirements:
+__________________________________________________________
+| Id | Description | Status |
+| ------ | ------ | ------ |
+| HLR1||Implemented||
+| HLR2||Implemented|
+| HLR3||Implemented|
+| HLR4||Implemented|
+| HLR5||Implemented|
+|HLR6||Implemented|
+
+#### Low level requirements:
+__________________________________________________________
+| Id | Description | Status |
+| ------ | ------ | ------ |
+| LLR1| |Implemented||
+| LLR2||Implemented|
+| LLR3||Implemented|
+__________________________________________________________
+
+
+## SYSTEM DESIGN 
+
 
 ### BLOCK DIAGRAM
 ![enter image description here](https://www.linkpicture.com/q/USE-CASE-4.png)
