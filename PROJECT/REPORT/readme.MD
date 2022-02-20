@@ -74,4 +74,11 @@ __________________________________________________________
 
 ### BLOCK DIAGRAM
 ![enter image description here](https://www.linkpicture.com/q/USE-CASE-4.png)
-
+_____________________________________________
+### WORKING OF BLOCKS
+## RAIN SENSOR 
+- A sensor that is used to sence the water drops . This sensor works like a switch.The rain sensor module includes a sensing pad which includes two series copper tracks coated with nickel. This pad includes two header pins which are connected internally to the copper tracks of the pad. The main function of these two header pins is for connecting the Sensing Pad with the rain sensor module with the help of two jumper wires. the rain sensor module’s one pin provides a +5v power supply toward the one path of the sensing pad, whereas the other pin gets the r
+## CONPONENT SPECS
+- Operating voltage ranges from 3.3 to 5V
+- The operating current is 15 mA
+- The sensing pad size is 5cm x 4 cm with a nickel plate on one face.
