@@ -43,3 +43,5 @@ _______________________
 ____________________________________________
 
 ## 1.4 COMPONENT EXPLAINATION
+### ARDUINO UNO 
+- In this system arduino uni is ued as the microcontroller it is used to collect the data and signals from the sensors
