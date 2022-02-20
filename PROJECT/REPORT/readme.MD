@@ -51,20 +51,21 @@ ______________________
 __________________________________________________________
 | Id | Description | Status |
 | ------ | ------ | ------ |
-| HLR1||Implemented||
-| HLR2||Implemented|
-| HLR3||Implemented|
-| HLR4||Implemented|
-| HLR5||Implemented|
-|HLR6||Implemented|
+| HLR1|SYSTEM SHOULD CLOSE THE BIN WHEN IT IS FULL|IMPLEMENTED||
+| HLR2|SYSTEM SHOULD CLOSE THE CLOSE WHEN IT RAINS|IMPLEMENTED|
+| HLR3|SYSTEM SHOULD OPEN THE BIN WHEN THE PERSON COME NEAR TO IT|IMPLEMENTED|
+| HLR4|SYSTEM SHOULD SEND THE MESSAGE TO THE END USER WHEN BIN IS FULL |IMPLEMENTED|
+| HLR5|SYSTEM SHOULD DISPLAY THE MESSAGE|IMPLEMENTED|
 
 #### Low level requirements:
 __________________________________________________________
 | Id | Description | Status |
 | ------ | ------ | ------ |
-| LLR1| |Implemented||
-| LLR2||Implemented|
-| LLR3||Implemented|
+| LLR1|ULTRASONIC SENSOR SHOULD SENCE THE GARBAGE LEVEL AND SERVO MOTOR SHOULD CLOSE THE DOOR |Implemented|
+| LLR2|RAIN SENSOR SHOULD SENSE THE WATER DROPS AND SERVO MOTOR SHOULD CLOSE THE DOOR|Implemented|
+| LLR3|IR SENSOR SHOULD SENCE IF ANYONE COMES CLOSE AND SERVO SHOULD OPEN THE DOOR|Implemented|
+| LLR4|HC-05 BLUETOOTH MODULE SHOULD SEND THE DATA TO END DEVICE|Implemented|
+| LLR5|LCD DISPLAY SHOULD VIEW DATA FROM THE CONTROLLER|Implemented|
 __________________________________________________________
 
 
