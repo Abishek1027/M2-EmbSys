@@ -1,122 +1,168 @@
-
-# LEARNING REPORT SUMMARY
-
-
-### PROBLEM STATEMENT
-
-- Overflowing of street dustbin create the unhygienic environment and also prone to spreading diseases.
-
-### EXISTING SYSTEM
-
-- The existing garbage bins a manually opened and closed there is no indication for garbage level so the garbage is collected after it overflows. Because there is no sensors the garbage bin will always be opened.
-
-### PROPOSSED SYSTEM
-- In the proposed system the garbage bin is automated with various sensors and actuators to sense the level of bin and close the bin to avoid overflow. At the same time the bin only opens when a person come close to it. Remaining time the bin will be closed. The level of the bin is transmitted to the end user to identify the level. By this we can achieve the solution for the problem statement.
-______________________
-## AUTOMATED GARBAGE BIN SYSTEM
-
-### INTRODUCTION
-
-- Automated garbage system is a project proposed to solve the garbage overflow problem on streets.
-
-- In order to overcome the problem this project is designed with sensors, actuators, GPIO’s, serial communication protocols, LED display and power supply unit.
-
-- This setup works together and to automate the garbage bin and avoid the overflow of garbage on streets.
-____________________
-### APPLICATION 
-
-- The door of the garbage bin will close automatically when it is filled
-
-- The rain sensor senses the rain drops and close the garbage when it rains
-
-- The dustbin doors will open automatically when a person come near the bin so that the door will be closed in the remaining time.
-
-- This system will send the data through Bluetooth to the end system.
-
-- It enables the remote monitoring.
-______________________________________
-### FEATURES
-
-- Over flow of garbage is controlled along the streets
-
-- Easily monitored
-
-- Environment hygiene is improved
-______________________
-## V MODEL APPROACH
-![enter image description here](https://www.linkpicture.com/q/USE-CASE.png)
-______________________
-## REQUIREMENTS
-#### High level requirements:
-__________________________________________________________
-| Id | Description | Status |
-| ------ | ------ | ------ |
-| HLR1|SYSTEM WILL CLOSE THE BIN WHEN IT IS FULL|IMPLEMENTED||
-| HLR2|SYSTEM WILL CLOSE THE CLOSE WHEN IT RAINS|IMPLEMENTED|
-| HLR3|SYSTEM WILL OPEN THE BIN WHEN THE PERSON COME NEAR TO IT|IMPLEMENTED|
-| HLR4|SYSTEM WILL SEND THE MESSAGE TO THE END USER WHEN BIN IS FULL |IMPLEMENTED|
-| HLR5|SYSTEM WILL DISPLAY THE MESSAGE|IMPLEMENTED|
-
-#### Low level requirements:
-__________________________________________________________
-| Id | Description | Status |
-| ------ | ------ | ------ |
-| LLR1|ULTRASONIC SENSOR WILL SENCE THE GARBAGE LEVEL AND SERVO MOTOR SHOULD CLOSE THE DOOR |IMPLEMENTED|
-| LLR2|RAIN SENSOR WILL SENSE THE WATER DROPS AND SERVO MOTOR SHOULD CLOSE THE DOOR|IMPLEMENTED|
-| LLR3|IR SENSOR WILL SENCE IF ANYONE COMES CLOSE AND SERVO SHOULD OPEN THE DOOR|IMPLEMENTED|
-| LLR4|HC-05 BLUETOOTH MODULE WILL SEND THE DATA TO END DEVICE|IMPLEMENTED|
-| LLR5|LCD DISPLAY WILL VIEW DATA FROM THE CONTROLLER|IMPLEMENTED|
-__________________________________________________________
+# PATIENT MONITORING SYSTEM
 
 
-## SYSTEM DESIGN 
 
 
-## BLOCK DIAGRAM
+
+
+
+
+
+## TABLE OF CONTENTS
+|S.NO|CONTENTS|
+|----|--------|
+|1.|	PARALYSIS PATIENT MONITORING SYSTEM|
+|1.1	| Abstract|
+|1.2|	 Features|
+|1.3	| State of art|
+|1.4	| 5W’s and 1H| 
+1.5	 |SWOT analysis|
+|2.|	REQUIREMENTS|
+|2.1|	 High level requirements|
+|2.2	| Low level requirements|
+|2.3|	BLOCK DIAGRAM AND BLOCKS EXPLANATION|
+|3.1|	 Block Diagram|
+|3.2	| Sensors|
+|3.3	 |Actuators|
+|3.4	 |COMMUNICATION PROTOL|
+|4.    |ARCHITECTURE|
+|4.1|	Behavioural Diagram|
+|4.1	|Structural Diagram|
+|5.|Testplan and Output|
+|5.1|Test Cases|
+|5.2|Highlevel Testplan|
+|5.3|Lowlevel Testplan|
+|6.|     APPLICATIONS OF THE PROJECT|
+|7.|Limitations|
+
+
+# 1. PATIENT MONITORING SYSTEM
+
+## 1.1 ABSTRACT
+-	Healthcare automation ensures support to the patient and eliminates the need of a caretaker near the patient. This project is based on Internet of Things and connects electronic devices to a public or private cloud to capture or monitor data and enables them to automatically trigger certain events. This project proposes automation techniques in healthcare such as heart beat rate monitor, pill bottle and drips bottle remainder, electronic paralysis patient caretaker. These automation devices are used to monitor patient health remotely using sensors and mobile communication devices.  These devices are known as the Internet of things for medical devices or IoT-MD.
+
+## 1.2 FEATURES
+-	The proposed system uses heart beat sensor that allows detecting the heart rate of a person even if the person is at home and transmits the heart rate readings over Internet.
+-	Paralysis people in most cases are not able to convey their fundamental needs as they are unable to speak clearly. In such a situation, this system helps the disabled person to show hand gestures which in turn will display the need of the patient on a LCD screen.
+-	This project assists in reminding the patient to take their pills on time. The system uses a mechanical setup (DC Motor and a wheel to locomote the pill) with IR receiver to indicate the collection of pills.
+- This system makes use of a Clinical level sensor which indicates the level of Glucose inside the drips bottle.
+
+
+## 1.3 STATE OF ART
+-This project suggests some automation techniques in healthcare such as Heart rate monitor, Paralysis Patient Healthcare, Pill remainder, Drips bottle automation. Healthcare automation ensures proper support to the patient. These automation devices are used to monitor patient health remotely using sensors, mobile communication devices, and actuators.
+
+
+## 1.4 5W’s and 1H
+
+[![image](https://www.linkpicture.com/q/5W1H-Example.png)](https://www.linkpicture.com/view.php?img=LPic6219e14f36015477645023)
+
+## 1.5 SWOT ANALYSIS 
+
+[![image](https://www.linkpicture.com/q/SWOT-ANALYSIS.png)](https://www.linkpicture.com/view.php?img=LPic6219e19037a511294093441)
+ 
+
+
+
+
+
+
+## 2. REQUIREMENTS
+
+### 2.1 HIGH LEVEL REQUIREMENTS:
+|ID|	DESCRIPTION|	STATUS|
+|--|-------------|--------|
+|HLR1	|THE SYSTEM WILL MEASURE THE HEART RATE|	TO BE DONE|
+|HLR2	|THE SYSTEM WILL MEASURE DRIPS BOTTLE LEVEL|	TO BE DONE|
+|HLR3	|THE SYSTEM WILL SENSE THE PILLS DELIVERY	|TO BE DONE|
+|HLR4|	THE SYSTEM WILL SENSE THE GUESTURE OF THE PATIENT|	TO BE DONE|
+|HLR5|	THE SYSTEM WILL SEND THE ALERT MESSAGE TO USER	|TO BE DONE|
+
+
+### 2.2 LOW LEVEL REQUIREMENTS:
+
+|ID|	DESCRIPTION|	STATUS|
+|--|-------------|--------|
+|LLR1|	HEART RATE SENSOR WILL SENSE THE HEART RATE AND SEND TO CONTROLER|	TO BE DONE|
+|LLR2|	LEVEL SENSOR WILL MEASURE THE DRIPS LEVEL AND TRANSMITTS THE READING TO CONTROLLER	|TO BE DONE|
+|LLR3|	IR SENSOR WILL SENSE THE PRESENCE OF PILL IN THE PILL BOX AND TRANSMITTS THE DATA TO THE CONTROLLER|	TO BE DONE|
+|LLR4|	ACCLEROMETER WILL SENCE THE ANGLE OF THE HAND GLOVES AND TRNSMITTS SIGNAL TO CONTROLLER|	TO BE DONE|
+|LLR5|	ATMEGA 328 CONTOLLER WILL SEND THE ALL-PROCESSED DATA THROUGH SERIAL PORT TO THE IOT MODULE|	TO BE DONE|
+
+## 3. BLOCK DIAGRAM AND BLOCKS EXPLAINATION
+
+### 3.1 BLOCK DIAGRAM
+_____________________
 [![image](https://www.linkpicture.com/q/BLOCK-DIAGRAM.png)](https://www.linkpicture.com/view.php?img=LPic6219e5249d12a916545710)
-________________
+______________________________
 ![enter image description here](https://www.linkpicture.com/q/WhatsApp-Image-2022-03-07-at-00.33.16.jpeg)
+_________________________
+## 3.2 SENSORS
 
-## WORKING OF BLOCKS
-_______________________________________
-### RAIN SENSOR 
-- A sensor that is used to sence the water drops and transmits the signal to the controller. 
-- This sensor works like a switch.The rain sensor module includes a sensing pad which includes two series copper tracks coated with nickel. 
-- This pad includes two header pins which are connected internally to the copper tracks of the pad.
+### 3.2.1 LEVEL SENSOR
+- A level sensor is a device for determining the level or amount of fluids, liquids or other substances that flow in an open or closed system. There are two types of level measurements, namely, continuous and point level measurements. Continuous level sensors are used for measuring levels to a specific limit, but they provide accurate results. Point level sensors, on the other hand, only determine if the liquid level is high or low. The level sensors are usually connected to an output unit for transmitting the results to a monitoring system. Current technologies employ wireless transmission of data to the monitoring system, which is useful in elevated and dangerous locations that cannot be easily accessed by common workers.
 
-### ULTRASONIC SENSOR
-- This sensor sence the level of the bin is filled and sends the data to the arduino.
-- An ultrasonic sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound wave. 
-- It converts the reflected sound into an electrical signal.
+### 3.2.2 HEART RATE SENSOR
+- Heart beat sensor is designed to give digital output of heat beat when a finger is placed on it. When the heart beat detector is working, the beat LED flashes in unison with each heartbeat. This digital output can be connected to microcontroller directly to measure the Beats per Minute (BPM) rate. It works on the principle of light modulation by blood flow through finger at each pulse.
 
-### IR SENSOR
-- Proximity Sensor are used to detect objects and obstacles in front of sensor and gives the signal to the arduino.
-- Sensor keeps transmitting infrared light and when any object comes near. 
-- it is detected by the sensor by monitoring the reflected light from the object.
+### 3.2.3 IR SENSOR
+- An infrared sensor is an electronic device that emits in order to sense some aspects of the surroundings. An IR sensor can measure the heat of an object as well as detects the support of level sensor motion These types of sensors measures only infrared radiation, rather than emitting it that is called as a passive IR sensor .Usually in the infrared spectrum, all the objects radiate some form of thermal radiations. These types of radiations are invisible to our eyes, that can be detected by an infrared sensor. The emitter is simply an IR LED (Light Emitting Diode) and the detector is simply an IR photodiode which is sensitive to IR light of the same wavelength as that emitted by the IR LED. 
 
-### ATMEGA 328
-- This board is used as centerallized contol unit. thus it receives the data from the sensor and transmits the processsed signals to the actuators and display
-- Arduino UNO is a microcontroller board based on the ATmega328P.
-- It has 14 digital input/output pins (of which 6 can be used as PWM outputs).
-- 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button.
-- It contains everything needed to support the microcontroller.
 
-### BLUETOOTH HC-05 MODULE
-- This uses serial communication protocol to receive the data from board and uses wireless communication protocol to transmitt the data to the another wirelesss device.
-- HC-05 4 Pin Wireless Serial Bluetooth Module is a Bluetooth module for use with any microcontroller.
-- It uses the UART protocol to make it easy to send and receive data wirelessly.
-- The HC-04 module can be used as a Master as well as a slave device for transmitter and receiver.  
-_______________________________________________________________
+### 3.2.4 ACCELEROMETER
+- An accelerometer is a device that measures proper acceleration (&quot;g-force&quot;). Proper acceleration is not the same as coordinate acceleration (rate of change of velocity). For example, an accelerometer at rest on the surface of the Earth will measure an  acceleration g= 9.81 m/s 2  straight upwards. By contrast, accelerometers in free fall (falling toward the center of the Earth at a rate of about 9.81 m/s 2) will measure zero. Micro machined accelerometers are increasingly present in portable electronic devices and video game controllers, to detect the position of the device or provide for game input.
+
+## 3.3 ACTUATORS
+
+### 3.3.1 MOTOR
+-	A DC motor is any of a class of electrical machines that converts direct current electrical power into mechanical power. The most common types rely on the forces produced by magnetic fields. Nearly all types of DC motors have some internal mechanism, either electromechanical or electronic, to periodically change the direction of current flow in part of the motor.
+
+### 3.3.2 RELAY
+- A relay is an Electric operated Switch. Many relays use an to operate a switching mechanism Electromagnet mechanically, but other operating principles are also used. Relays are used where it is necessary to control a circuit by a low-power signal (with complete electrical isolation between control and controlled circuits), or where several circuits must be controlled by one signal. The first relays were used in long distance telegraph circuits, repeating the signal coming in from one circuit and re-transmitting it to another. Relays were used extensively in telephone exchanges and early computers to perform logical operations.
+## 3.4 COMMUNICATION PROTCOL
+
+### 3.4.1 NODE MCU
+-	NodeMCU is an open source Lua based firmware for the ESP8266 WiFi SOC from Espressif and uses an on-module flash-based SPIFFS file system. NodeMCU is implemented in C and is layered on the Espressif NON-OS SDK. The firmware was initially developed as is a companion project to the popular ESP8266-based NodeMCU development modules, but the project is now community-supported, and the firmware can now be run on any ESP module.
 # 4. ARCHIETECTURE
 ## 4.1 Behavioral Diagram
 ![enter image description here](https://www.linkpicture.com/q/Flowchart-Example_-Medical-Registration-1.png)
 ## 4.2 STRUCTURAL DIAGRAM
 [![image](https://www.linkpicture.com/q/Credit-Card-Processing-Of-Online-Shopping-Use-Case-Diagram-1.png)](https://www.linkpicture.com/view.php?img=LPic6219e330bff061527446622)
-## 4.3 BLOCK DIAGRAM
-![enter image description here](https://www.linkpicture.com/q/WhatsApp-Image-2022-03-07-at-00.33.16.jpeg)
-________________________________________
-## 4. APPLICATION
+# 5.TESTPLAN AND OUTPUT
+## 5.1 TEST CASES
+| TEST ID | TEST CASE | PASS/FAIL |
+| --- | --- | --- |
+| 01 | HEARTRATE SENSOR WILL MEAUSRE THE HEART RATE BODY |  ✅ |
+| 02 | LIQUID LEVEL SENSOR WILL SENSE THE  LIQUID LEVEL IN DRIPS BOTTLE |  ✅ |
+| 03 | HAND GUESTURE(ACCELEROMETER) WILL MONITOR THE HAND GLOVE POSITION  | ✅ |
+| 04 |PROXIMITY SENSOR WILL DETECT THE PRESENCE OF PILL AND RUN THE MOTOR |  ✅ |
+| 05 | CONTROLLER TRANSMITTS THE SENSOR DATA TO BLUETOOTH MODULE USING SERIAL COMMUNICATION PROTOCOL WHICH IS VISIBLE TO END USER |  ✅ |
+___________________________________
+## 5.2 HIGH LEVEL TEST PLAN
+| TEST ID | DESCRIPTION | INPUT | EXPECTED OUTPUT | ACTUAL OUTPUT | PASS/FAIL |
+| --- | --- | --- | --- | --- | --- |
+| 01 | HEARTRATE SENSOR |</>THREESHOLD  | SYSTEM SHALL VIEW EMERGENCY MESSAGE ON LCD | SYSTEM SHALL DISPLAY EMERGENCY MESSAGE ON LCD |  ✅ |
+| 02 | DRIPS LEVEL SENSOR | LIQUILD LEVEL |SYSTEM SHALL DISPLAY LOW DRIPS MESSAGE ON LCD| SYSTEM SHALL DISPLAY LOW DRIPS MESSAGE ON LCD |  ✅ |
+| 03 | HAND GUESTURE | POSITION | SHALL DISPLAY THE POSITION STATUS | SHALL DISPLAY THE POSITION STATUS | ✅ |
+| 04 | PILLS PRESENCE DETECTOR | HIGH/LOW |MOTOR SHALL RUN|MOTOR SHALL RUN |  ✅ |
+| 05 | BLUETOOTH MODULE | CONTROLLER O/P  | SHALL TRANSMIT THE DATA TO BLUETHOOTH MODULE |SHALL TRANSMIT THE DATA TO BLUETHOOTH MODULE  |  ✅ |
+___________________________
+## 5.3LOW LEVEL TEST PLAN
+| LOW LEVEL TEST ID |FOR HIGH LEVEL TEST ID | DESCRIPTION | INPUT | EXPECTED OUTPUT | ACTUAL OUTPUT | PASS/FAIL |
+| --- | --|--- | --- | --- | --- | --- |
+| 01 |01 |HEARTRATE SENSOR |SENSOR VALUE(>300)  | LCD O/P [LOW HEART RATE] |LCD O/P ["LOW HEART RATE"] |  ✅ |
+| 02 |02 |LIQUID LEVEL SENSOR | SENSOR VALUE(>350) |LCD O/P ["LOW DRIPS LEVEL"]| LCD O/P ["LOW DRIPS LEVEL"] |  ✅ |
+| 03 |03 |ACCELEROMETER | X=500,Y=400,Z=508 | LCD O/P ["EMERGENCY"] |LCD O/P ["EMERGENCY"]| ✅ |
+| 04 | 04|IR SENSOR | HIGH(0V)/LOW(5V) |MOTOR START RUN FOR 3 SECONDS|MOTOR START RUN FOR 3 SECONDS|  ✅ |
+| 05 |05 |HC-05 | ALL SENSOR VALUES &  MOTOR RUN STATUS  | TRANSMITS DATA IN WIRELESS TO END DEVICE|TRANSMITS DATA IN WIRELESS TO END DEVICE  |  ✅ |
+___________________________________________
+
+
+# 6. APPLICATION
 - Continuously monitoring the heart rate of the patient.
 -	Maintaining the drips bottle level.
 -	Pills intake direction and assistance.
 -	Gesture control gloves for emergency purpose. 
+# 7.LIMITATIONS
+-	Due to IDE limitation Bluetooth module is not attached in the simulation
+-	Due to lack of sensor availability potentiometer is assumed as analog sensor and switch is assumed as digital senor
+
