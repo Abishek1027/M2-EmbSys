@@ -29,8 +29,12 @@
 |4.    |ARCHITECTURE|
 |4.1|	Behavioural Diagram|
 |4.1	|Structural Diagram|
-|5.|     APPLICATIONS OF THE PROJECT|
-
+|5.|Testplan and Output|
+|5.1|Test Cases|
+|5.2|Highlevel Testplan|
+|5.3|Lowlevel Testplan|
+|6.|     APPLICATIONS OF THE PROJECT|
+|7.|Limitations|
 
 
 # 1. PATIENT MONITORING SYSTEM
@@ -124,10 +128,41 @@ _________________________
 ![enter image description here](https://www.linkpicture.com/q/Flowchart-Example_-Medical-Registration-1.png)
 ## 4.2 STRUCTURAL DIAGRAM
 [![image](https://www.linkpicture.com/q/Credit-Card-Processing-Of-Online-Shopping-Use-Case-Diagram-1.png)](https://www.linkpicture.com/view.php?img=LPic6219e330bff061527446622)
+# 5.TESTPLAN AND OUTPUT
+## 5.1 TEST CASES
+| TEST ID | TEST CASE | PASS/FAIL |
+| --- | --- | --- |
+| 01 | HEARTRATE SENSOR WILL MEAUSRE THE HEART RATE BODY |  ✅ |
+| 02 | LIQUID LEVEL SENSOR WILL SENSE THE  LIQUID LEVEL IN DRIPS BOTTLE |  ✅ |
+| 03 | HAND GUESTURE(ACCELEROMETER) WILL MONITOR THE HAND GLOVE POSITION  | ✅ |
+| 04 |PROXIMITY SENSOR WILL DETECT THE PRESENCE OF PILL AND RUN THE MOTOR |  ✅ |
+| 05 | CONTROLLER TRANSMITTS THE SENSOR DATA TO BLUETOOTH MODULE USING SERIAL COMMUNICATION PROTOCOL WHICH IS VISIBLE TO END USER |  ✅ |
+___________________________________
+## 5.2 HIGH LEVEL TEST PLAN
+| TEST ID | DESCRIPTION | INPUT | EXPECTED OUTPUT | ACTUAL OUTPUT | PASS/FAIL |
+| --- | --- | --- | --- | --- | --- |
+| 01 | HEARTRATE SENSOR |</>THREESHOLD  | SYSTEM SHALL VIEW EMERGENCY MESSAGE ON LCD | SYSTEM SHALL DISPLAY EMERGENCY MESSAGE ON LCD |  ✅ |
+| 02 | DRIPS LEVEL SENSOR | LIQUILD LEVEL |SYSTEM SHALL DISPLAY LOW DRIPS MESSAGE ON LCD| SYSTEM SHALL DISPLAY LOW DRIPS MESSAGE ON LCD |  ✅ |
+| 03 | HAND GUESTURE | POSITION | SHALL DISPLAY THE POSITION STATUS | SHALL DISPLAY THE POSITION STATUS | ✅ |
+| 04 | PILLS PRESENCE DETECTOR | HIGH/LOW |MOTOR SHALL RUN|MOTOR SHALL RUN |  ✅ |
+| 05 | BLUETOOTH MODULE | CONTROLLER O/P  | SHALL TRANSMIT THE DATA TO BLUETHOOTH MODULE |SHALL TRANSMIT THE DATA TO BLUETHOOTH MODULE  |  ✅ |
+___________________________
+## 5.3LOW LEVEL TEST PLAN
+| LOW LEVEL TEST ID |FOR HIGH LEVEL TEST ID | DESCRIPTION | INPUT | EXPECTED OUTPUT | ACTUAL OUTPUT | PASS/FAIL |
+| --- | --|--- | --- | --- | --- | --- |
+| 01 |01 |HEARTRATE SENSOR |SENSOR VALUE(>300)  | LCD O/P [LOW HEART RATE] |LCD O/P ["LOW HEART RATE"] |  ✅ |
+| 02 |02 |LIQUID LEVEL SENSOR | SENSOR VALUE(>350) |LCD O/P ["LOW DRIPS LEVEL"]| LCD O/P ["LOW DRIPS LEVEL"] |  ✅ |
+| 03 |03 |ACCELEROMETER | X=500,Y=400,Z=508 | LCD O/P ["EMERGENCY"] |LCD O/P ["EMERGENCY"]| ✅ |
+| 04 | 04|IR SENSOR | HIGH(0V)/LOW(5V) |MOTOR START RUN FOR 3 SECONDS|MOTOR START RUN FOR 3 SECONDS|  ✅ |
+| 05 |05 |HC-05 | ALL SENSOR VALUES &  MOTOR RUN STATUS  | TRANSMITS DATA IN WIRELESS TO END DEVICE|TRANSMITS DATA IN WIRELESS TO END DEVICE  |  ✅ |
+___________________________________________
 
 
-## 4. APPLICATION
+# 6. APPLICATION
 - Continuously monitoring the heart rate of the patient.
 -	Maintaining the drips bottle level.
 -	Pills intake direction and assistance.
 -	Gesture control gloves for emergency purpose. 
+# 7.LIMITATIONS
+-	Due to IDE limitation Bluetooth module is not attached in the simulation
+-	Due to lack of sensor availability potentiometer is assumed as analog sensor and switch is assumed as digital senor
