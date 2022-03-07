@@ -13,7 +13,7 @@
 ## 1.3 STATE OF ART
 - This project suggests some automation techniques in healthcare such as Heart rate monitor, Paralysis Patient Healthcare, Pill remainder, Drips bottle automation. Healthcare automation ensures proper support to the patient. These automation devices are used to monitor patient health remotely using sensors, mobile communication devices, and actuators.
 
-## 4. APPLICATION
+## 1.4 APPLICATION
 - Continuously monitoring the heart rate of the patient.
 -	Maintaining the drips bottle level.
 -	Pills intake direction and assistance.
