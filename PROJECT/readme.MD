@@ -6,13 +6,6 @@
    <img src="https://api.codiga.io/public/badge/user/github/Abishek1027?style=light" alt="codiga badge" />
 </a>
 
-__________________________________________________
-## SIMULATION VIDEO 
-[SIMULATION VIDEO LINK](https://youtu.be/HBdhPRljneg)
-_____________________________________
-## SIMULATION OUTPUT
-[![image](https://www.linkpicture.com/q/on_state.jpeg)](https://www.linkpicture.com/view.php?img=LPic622610e8a51791036819642)
-____________________________
 # 1. PATIENT MONITORING SYSTEM
 
 ## 1.1 ABSTRACT
@@ -33,3 +26,10 @@ ____________________________
 -	Maintaining the drips bottle level.
 -	Pills intake direction and assistance.
 -	Gesture control gloves for emergency purpose. 
+__________________________________________________
+## SIMULATION VIDEO 
+[SIMULATION VIDEO LINK](https://youtu.be/HBdhPRljneg)
+_____________________________________
+## SIMULATION OUTPUT
+[![image](https://www.linkpicture.com/q/on_state.jpeg)](https://www.linkpicture.com/view.php?img=LPic622610e8a51791036819642)
+____________________________
